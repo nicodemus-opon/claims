@@ -30,3 +30,6 @@ logs
 
 # notebooks
 *.ipynb
+target/
+dbt_packages/
+.user.yml

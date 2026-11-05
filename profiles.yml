@@ -1,0 +1,8 @@
+claims:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: claims.duckdb
+      schema: main
+      threads: 4

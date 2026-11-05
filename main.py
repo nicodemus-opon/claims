@@ -9,8 +9,8 @@ files = [f for f in dir_path.iterdir() if f.is_file() & str(f).endswith('.csv')]
 
 for file in files:
     table = str(file).split('.')[0].split('/')[1].split('data_')[1]
-    print(table)
     con.execute(f"""
-        CREATE OR REPLACE TABLE {table} AS
+        CREATE OR REPLACE TABLE raw_{table} AS
         SELECT * FROM read_csv_auto('{file}', header=true)
     """)
+    print('loaded:',table)
