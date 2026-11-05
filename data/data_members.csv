@@ -1,0 +1,201 @@
+member_id,scheme_id,first_name,last_name,date_of_birth,gender,county,enrolled_on,status
+1,1,Wanjiru,Kipchoge,1970-04-05,F,kiambu,2024-12-18,active
+2,3,Otieno,Kariuki,1960-04-08,F,Uasin Gishu,2024-04-23,active
+3,5,Nyokabi,Wekesa,1983-10-09,F,Machakos,2024-03-23,active
+4,2,Njeri,Wekesa,2003-06-04,F,Nakuru,2024-02-12,active
+5,2,Otieno,Owino,1989-02-13,F,Uasin Gishu,2024-05-27,active
+6,3,Chebet,Odhiambo,1957-11-08,M,Nairobi,2024-04-28,active
+7,2,Kiplagat,Njoroge,1965-06-12,F,Kiambu,2024-05-23,terminated
+8,1,Mutiso,Wekesa,1965-08-13,M,Kiambu,2024-12-18,active
+9,3,Otieno,Wekesa,2007-01-26,M,Nakuru,2024-05-03,active
+10,3,Chebet,Owino,1980-11-15,F,Kisumu,2024-03-08,active
+11,5,Wafula,Maina,2012-10-13,M,Mombasa,2024-03-17,active
+12,1,Kamau,Mutua,1995-03-26,M,Uasin Gishu,2024-02-13,active
+13,4,Wafula,Kariuki,1998-12-04,M,Machakos,2024-11-11,active
+14,3,Mutiso,Owino,1955-12-24,M,Uasin Gishu,2024-03-17,suspended
+15,2,Chebet,Mutua,1978-03-18,F,Uasin Gishu,2024-06-16,active
+16,3,Akinyi,Wekesa,1958-04-19,F,Nairobi,2024-12-16,active
+17,5,Njeri,Mutua,1997-08-18,F,Kisumu,2024-09-28,active
+18,2,Chebet,Kipchoge,1980-11-21,M,nakuru,2024-09-15,active
+19,2,Achieng,Njoroge,1956-10-18,F,Uasin Gishu,2024-04-01,active
+20,1,Barasa,Odhiambo,2012-01-28,M,Nairobi,2024-09-08,active
+21,4,Chebet,Mutua,2001-10-19,M,Mombasa,2024-08-26,active
+22,1,Kamau,Maina,1977-07-14,M,Machakos,2024-12-02,active
+23,1,Otieno,Maina,2001-06-26,F,Mombasa,2024-04-07,active
+24,2,Nyokabi,Mutua,1972-08-08,F,  Nakuru ,2024-09-04,active
+25,5,Wanjiru,Odhiambo,2014-04-06,M,Nakuru,2024-08-07,suspended
+26,1,Mutiso,Maina,1955-07-09,M,Kisumu,2024-07-23,terminated
+27,5,Atieno,Mutua,1967-05-07,F,Uasin Gishu,2024-12-18,active
+28,3,Otieno,Kariuki,1992-08-17,F,Nairobi,2024-09-03,suspended
+29,1,Achieng,Wekesa,1980-02-19,F,Uasin Gishu,2024-10-02,active
+30,3,Mwangi,Kipchoge,1968-11-23,M,Mombasa,2024-05-13,active
+31,2,Kiplagat,Njoroge,2014-02-01,M,Uasin Gishu,2024-10-04,active
+32,2,Wafula,Mutua,2014-06-03,F,Kisumu,2024-05-06,active
+33,5,Akinyi,Kariuki,1997-09-10,F,Mombasa,2024-05-04,suspended
+34,5,Njeri,Kipchoge,1973-10-07,M,Mombasa,2024-11-21,suspended
+35,5,Atieno,Kipchoge,2012-01-03,M,machakos,2024-05-02,active
+36,2,Wafula,Mutua,2002-08-18,M,Uasin Gishu,2024-01-04,active
+37,2,Otieno,Njoroge,1992-09-05,M,Mombasa,2024-01-10,active
+38,1,Cherono,Wekesa,1998-04-22,F,Kisumu,2024-09-28,active
+39,2,Barasa,Mutua,2006-03-14,F,Mombasa,2024-12-11,active
+40,3,Barasa,Kipchoge,1965-12-04,M,Machakos,2024-01-28,active
+41,2,Kiplagat,Njoroge,1974-04-08,F,Kiambu,2024-04-13,active
+42,1,Wafula,Njoroge,1996-09-13,M,Nairobi,2024-02-09,active
+43,2,Otieno,Odhiambo,1993-07-12,M,Nakuru,2024-10-17,active
+44,2,Wafula,Kariuki,2000-07-01,F,Kisumu,2024-07-03,terminated
+45,3,Mwangi,Odhiambo,2001-05-17,M,Kiambu,2024-07-11,active
+46,2,Njeri,Wekesa,1981-11-13,F,Uasin Gishu,2024-10-10,active
+47,1,Akinyi,Kipchoge,1968-07-26,M,  Nakuru ,2024-08-15,active
+48,5,Atieno,Mutua,1997-02-10,M,Nairobi,2024-04-22,active
+49,2,Njeri,Kariuki,1957-04-16,F,Nakuru,2024-07-21,active
+50,3,Atieno,Maina,1970-03-21,F,Machakos,2024-02-25,active
+51,2,Kiplagat,Kariuki,1990-04-28,F,Nakuru,2024-03-26,active
+52,5,Mwangi,Owino,1994-12-17,M,machakos,2024-09-15,suspended
+53,4,Kiplagat,Kipchoge,2003-04-27,M,Machakos,2024-09-16,active
+54,2,Kiplagat,Odhiambo,2000-05-08,M,Kisumu,2024-06-18,active
+55,2,Barasa,Maina,1999-03-23,F,Nairobi,2024-07-14,active
+56,4,Nyokabi,Kariuki,1968-07-13,F,Machakos,2024-10-13,active
+57,3,Akinyi,Maina,2009-07-18,F,Nakuru,2024-04-09,active
+58,1,Omondi,Njoroge,1997-11-26,M,Kiambu,2024-03-27,active
+59,2,Wanjiru,Maina,1992-10-22,F,Nairobi,2024-11-14,active
+60,4,Mutiso,Kariuki,1971-07-11,F,Nakuru,2024-06-11,active
+61,3,Wafula,Maina,1971-02-16,F,Kiambu,2024-09-02,terminated
+62,3,Barasa,Odhiambo,2004-11-02,F,Mombasa,2024-04-27,active
+63,2,Barasa,Mutua,1985-11-04,F,Nakuru,2024-12-09,active
+64,2,Kamau,Mutua,1974-02-19,F,Kisumu,2024-10-22,suspended
+65,3,Omondi,Wekesa,1959-10-23,F,Nairobi,2024-12-25,active
+66,1,Otieno,Njoroge,1989-07-22,M,Nairobi,2024-09-21,active
+67,3,Atieno,Odhiambo,1982-06-21,M,Kiambu,2024-03-14,active
+68,5,Wafula,Owino,1984-07-27,M,Kisumu,2024-04-27,terminated
+69,2,Kiplagat,Wekesa,2003-08-19,M,kisumu,2024-01-16,suspended
+70,2,Atieno,Wekesa,1977-05-11,M,  Uasin Gishu ,2024-12-09,active
+71,5,Chebet,Odhiambo,1970-12-14,M,Uasin Gishu,2024-04-23,active
+72,4,Kiplagat,Kariuki,1960-05-08,M,Kiambu,2024-04-10,active
+73,3,Atieno,Njoroge,1982-12-18,M,Kisumu,2024-12-15,active
+74,2,Barasa,Odhiambo,2001-04-11,F,Kiambu,2024-09-25,active
+75,2,Chebet,Owino,1972-12-19,M,Nairobi,2024-04-10,active
+76,2,Akinyi,Kariuki,2000-09-05,M,Nairobi,2024-01-18,active
+77,2,Atieno,Odhiambo,2010-01-19,M,Nakuru,2024-08-15,active
+78,1,Wafula,Owino,1962-02-13,M,Nairobi,2024-10-21,active
+79,2,Njeri,Kipchoge,1960-04-04,M,Uasin Gishu,2024-10-26,active
+80,5,Omondi,Owino,2013-08-10,M,Kisumu,2024-10-20,active
+81,1,Chebet,Wekesa,1971-11-03,F,Mombasa,2024-03-18,active
+82,1,Nyokabi,Owino,1999-10-16,M,Nairobi,2024-04-10,active
+83,4,Achieng,Wekesa,2014-05-26,F,Nakuru,2024-02-18,active
+84,2,Wafula,Mutua,1959-01-06,M,Uasin Gishu,2024-12-27,active
+85,2,Kiplagat,Odhiambo,1984-12-10,M,Kisumu,2024-09-18,active
+86,1,Otieno,Maina,2002-06-20,M,nairobi,2024-02-08,terminated
+87,1,Wafula,Kariuki,2003-03-16,M,Kisumu,2024-03-19,active
+88,4,Achieng,Owino,1977-07-11,M,Kiambu,2024-02-28,active
+89,3,Atieno,Kipchoge,1997-07-27,F,Nakuru,2024-02-11,active
+90,1,Omondi,Kariuki,1997-09-15,M,Nairobi,2024-04-17,active
+91,4,Kiplagat,Kariuki,1968-05-18,F,Kisumu,2024-08-23,active
+92,1,Barasa,Mutua,1974-09-01,M,Nairobi,2024-04-27,suspended
+93,4,Kamau,Mutua,1986-12-10,M,  Nakuru ,2024-08-16,active
+94,5,Njeri,Maina,1967-10-17,F,Machakos,2024-02-09,active
+95,3,Mwangi,Kipchoge,2007-01-10,M,Machakos,2024-10-19,terminated
+96,4,Njeri,Owino,1989-08-12,M,Uasin Gishu,2024-09-13,active
+97,3,Chebet,Wekesa,1991-07-08,M,Nairobi,2024-06-24,active
+98,3,Omondi,Mutua,1986-01-05,M,Machakos,2024-02-28,active
+99,1,Kiplagat,Kariuki,2001-03-14,F,Nairobi,2024-08-26,terminated
+100,3,Omondi,Odhiambo,2009-06-28,M,Kisumu,2024-11-23,suspended
+101,4,Otieno,Odhiambo,1970-11-22,M,Mombasa,2024-12-03,active
+102,1,Kamau,Owino,1965-12-10,F,Nairobi,2024-06-26,active
+103,3,Cherono,Maina,1964-04-17,M,uasin gishu,2024-11-26,active
+104,2,Achieng,Maina,1994-11-08,M,Uasin Gishu,2024-03-08,active
+105,2,Kiplagat,Kipchoge,1997-01-26,M,Kisumu,2024-11-18,active
+106,4,Cherono,Kipchoge,1995-07-23,M,Nakuru,2024-05-07,terminated
+107,4,Kamau,Wekesa,1979-10-12,M,Kiambu,2024-05-01,terminated
+108,3,Wafula,Kariuki,1991-11-25,F,Uasin Gishu,2024-12-16,active
+109,2,Barasa,Njoroge,1969-11-07,M,Kiambu,2024-12-25,active
+110,2,Kamau,Kariuki,1974-08-02,M,Kiambu,2024-03-03,suspended
+111,3,Nyokabi,Mutua,1967-03-26,M,Uasin Gishu,2024-09-09,active
+112,2,Atieno,Kipchoge,2002-06-26,F,Nakuru,2024-02-05,active
+113,2,Omondi,Njoroge,1960-07-01,M,Uasin Gishu,2024-02-15,active
+114,2,Omondi,Njoroge,1961-11-08,M,Nairobi,2024-10-18,active
+115,2,Achieng,Owino,2013-12-10,M,Nairobi,2024-03-02,terminated
+116,2,Atieno,Odhiambo,1961-04-18,F,  Nakuru ,2024-08-12,active
+117,5,Nyokabi,Mutua,2011-07-21,F,Machakos,2024-08-20,active
+118,2,Otieno,Njoroge,1968-08-15,F,Machakos,2024-06-04,terminated
+119,3,Cherono,Kariuki,1980-05-07,F,Machakos,2024-08-03,active
+120,1,Otieno,Njoroge,1970-03-26,F,nairobi,2024-09-07,active
+121,2,Mwangi,Mutua,2005-10-01,M,Machakos,2024-03-05,active
+122,2,Kamau,Kariuki,1963-01-12,F,Uasin Gishu,2024-06-01,active
+123,1,Njeri,Maina,1988-02-24,F,Nakuru,2024-08-25,active
+124,1,Kiplagat,Wekesa,2015-10-02,M,Nakuru,2024-11-01,active
+125,4,Omondi,Maina,1998-02-16,M,Nairobi,2024-02-11,active
+126,1,Njeri,Kipchoge,1994-11-19,M,Nakuru,2024-10-17,active
+127,5,Nyokabi,Odhiambo,2005-12-04,F,Nakuru,2024-08-08,active
+128,4,Omondi,Maina,2001-02-11,M,Kisumu,2024-11-09,active
+129,2,Atieno,Odhiambo,1960-02-03,M,Nairobi,2024-12-24,active
+130,2,Otieno,Njoroge,1997-02-14,M,Machakos,2024-11-25,active
+131,1,Akinyi,Kipchoge,1977-02-19,F,Mombasa,2024-11-16,active
+132,1,Cherono,Njoroge,1962-05-19,F,Machakos,2024-07-28,active
+133,5,Wanjiru,Kipchoge,1956-03-09,M,Kisumu,2024-06-01,active
+134,2,Omondi,Odhiambo,1964-12-21,F,Nairobi,2024-12-17,active
+135,3,Kiplagat,Njoroge,1965-06-10,M,Machakos,2024-10-20,active
+136,1,Njeri,Mutua,2003-10-02,F,Kisumu,2024-08-22,active
+137,4,Nyokabi,Kipchoge,1968-09-04,M,nakuru,2024-02-10,active
+138,4,Akinyi,Kariuki,1969-07-20,F,Nairobi,2024-04-10,terminated
+139,2,Wafula,Kipchoge,1975-02-01,M,  Kiambu ,2024-07-06,active
+140,5,Barasa,Njoroge,1959-07-28,F,Nakuru,2024-01-15,suspended
+141,3,Nyokabi,Maina,2000-11-14,M,Nairobi,2024-07-01,terminated
+142,2,Kiplagat,Njoroge,1960-07-28,F,Mombasa,2024-07-19,active
+143,1,Omondi,Kipchoge,2002-06-08,M,Machakos,2024-03-03,active
+144,1,Chebet,Njoroge,1977-12-27,F,Mombasa,2024-02-05,active
+145,2,Njeri,Odhiambo,1966-11-16,M,Machakos,2024-10-25,active
+146,3,Mwangi,Mutua,1983-02-16,M,Kiambu,2024-05-26,active
+147,1,Cherono,Odhiambo,1974-08-15,F,Nairobi,2024-06-27,active
+148,1,Omondi,Owino,1992-09-26,F,Nakuru,2024-10-21,active
+149,4,Njeri,Kariuki,1983-02-26,M,Kiambu,2024-02-17,active
+150,1,Barasa,Owino,1983-09-17,F,Kisumu,2024-06-10,active
+151,3,Otieno,Njoroge,1959-06-04,M,Kisumu,2024-05-24,suspended
+152,2,Mwangi,Odhiambo,1992-11-05,M,Kisumu,2024-11-23,active
+153,2,Achieng,Kipchoge,1990-07-21,M,Machakos,2024-03-22,active
+154,5,Achieng,Maina,1987-06-01,M,kisumu,2024-03-07,active
+155,4,Chebet,Wekesa,1963-03-03,M,Machakos,2024-02-17,active
+156,5,Otieno,Njoroge,2011-10-05,M,Mombasa,2024-03-06,active
+157,2,Kiplagat,Kariuki,1981-06-22,F,Nakuru,2024-10-10,active
+158,4,Barasa,Wekesa,1974-08-27,F,Kisumu,2024-11-19,terminated
+159,4,Akinyi,Maina,1987-09-14,F,Machakos,2024-04-26,active
+160,2,Otieno,Owino,2010-06-18,F,Kiambu,2024-09-28,active
+161,1,Mutiso,Kipchoge,1983-09-05,M,Nairobi,2024-04-27,active
+162,3,Wanjiru,Maina,1958-07-17,M,  Mombasa ,2024-07-03,active
+163,1,Mwangi,Odhiambo,2008-12-21,M,Machakos,2024-03-05,active
+164,4,Njeri,Owino,1983-10-01,F,Nairobi,2024-05-07,active
+165,5,Nyokabi,Odhiambo,2004-05-08,M,Nairobi,2024-01-08,active
+166,4,Achieng,Odhiambo,2008-08-20,F,Kiambu,2024-09-19,active
+167,2,Akinyi,Maina,1955-10-12,F,Uasin Gishu,2024-07-06,active
+168,1,Cherono,Odhiambo,1988-09-17,F,Nakuru,2024-08-02,active
+169,3,Wafula,Kariuki,1977-02-12,F,Kiambu,2024-11-21,active
+170,3,Njeri,Kariuki,1977-09-11,F,Machakos,2024-11-15,terminated
+171,4,Mutiso,Mutua,1959-12-25,M,nairobi,2024-05-07,active
+172,2,Otieno,Njoroge,2014-05-17,M,Machakos,2024-09-16,active
+173,2,Akinyi,Njoroge,2010-01-28,M,Kisumu,2024-02-26,active
+174,3,Kiplagat,Maina,1976-03-16,M,Kisumu,2024-09-09,active
+175,3,Achieng,Maina,1993-03-18,M,Kisumu,2024-02-03,active
+176,2,Akinyi,Owino,1993-12-14,F,Kiambu,2024-08-12,active
+177,3,Nyokabi,Kipchoge,1995-01-03,M,Kisumu,2024-09-26,active
+178,2,Wanjiru,Mutua,2009-10-22,M,Nairobi,2024-03-03,active
+179,3,Cherono,Maina,2015-10-02,F,Kiambu,2024-08-12,active
+180,1,Njeri,Njoroge,1980-06-21,M,Mombasa,2024-02-01,active
+181,4,Omondi,Odhiambo,1971-05-23,M,Mombasa,2024-10-10,active
+182,4,Chebet,Odhiambo,1963-02-15,F,Kiambu,2024-08-03,active
+183,3,Cherono,Odhiambo,1990-09-10,M,Machakos,2024-03-23,active
+184,2,Cherono,Wekesa,1962-04-26,F,Mombasa,2024-08-01,active
+185,3,Kiplagat,Mutua,1994-02-03,M,  Nakuru ,2024-12-24,active
+186,3,Nyokabi,Odhiambo,1963-06-21,F,Nakuru,2024-08-22,active
+187,2,Mutiso,Mutua,1982-09-28,F,Machakos,2024-02-17,active
+188,2,Mutiso,Njoroge,2014-12-08,M,uasin gishu,2024-05-28,active
+189,2,Wafula,Mutua,1995-05-20,F,Uasin Gishu,2024-11-06,active
+190,2,Mutiso,Njoroge,2008-10-02,F,Nairobi,2024-01-21,active
+191,2,Chebet,Maina,1994-11-01,M,Kiambu,2024-09-10,active
+192,2,Atieno,Wekesa,2006-11-13,M,Nakuru,2024-02-23,active
+193,4,Nyokabi,Owino,1984-04-11,F,Kisumu,2024-12-11,active
+194,3,Omondi,Mutua,2003-06-17,F,Kisumu,2024-04-15,active
+195,4,Barasa,Mutua,1961-01-10,M,Machakos,2024-10-14,active
+196,2,Mwangi,Njoroge,1967-03-16,M,Nakuru,2024-05-16,active
+197,3,Kiplagat,Wekesa,1968-10-12,F,Nairobi,2024-05-16,active
+198,4,Akinyi,Kariuki,2009-02-14,F,Kisumu,2024-12-12,active
+199,3,Otieno,Maina,1958-10-18,F,Kisumu,2024-09-10,active
+200,5,Kiplagat,Kipchoge,2007-10-22,F,Mombasa,2024-02-13,active

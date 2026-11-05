@@ -1,0 +1,13 @@
+provider_id,provider_name,provider_type,county,kmpdc_level
+1,Nairobi West Hospital,hospital,Kisumu,6
+2,Aga Khan Clinic,clinic,Kisumu,3
+3,Goodlife Pharmacy,pharmacy,Mombasa,6
+4,Lancet Labs,lab,Uasin Gishu,5
+5,Mater Misericordiae,hospital,Uasin Gishu,2
+6,Avenue Healthcare,hospital,Nairobi,2
+7,Metropolitan Hospital,hospital,Mombasa,4
+8,Equity Afia,clinic,Machakos,5
+9,Coptic Hospital,hospital,Uasin Gishu,5
+10,Bliss Healthcare,clinic,Mombasa,6
+11,Mediheal Group,hospital,Uasin Gishu,3
+12,Pathcare Kenya,lab,Kisumu,6
