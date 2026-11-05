@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: claims_raw
+    description: "Raw CSV-loaded tables in DuckDB schema main (loaded via main.py)"
+    schema: main
+    tables:
+      - name: raw_claims
+        description: "One row per claim header as billed by the provider"
+      - name: raw_claim_lines
+        description: "One row per service line within a claim"
+      - name: raw_claim_status_events
+        description: "Append-only log of claim status changes; latest event per claim is current status"
+      - name: raw_members
+        description: "One row per enrolled member"
+      - name: raw_providers
+        description: "One row per provider facility"
+      - name: raw_schemes
+        description: "One row per insurance scheme / plan"

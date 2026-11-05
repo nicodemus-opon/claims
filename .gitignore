@@ -33,3 +33,4 @@ logs
 target/
 dbt_packages/
 .user.yml
+dbt_internal_packages/
