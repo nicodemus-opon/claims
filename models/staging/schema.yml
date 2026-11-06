@@ -6,40 +6,157 @@ models:
     columns:
       - name: claim_id
         data_tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+      - name: member_id
+        data_tests:
+          - not_null:
+              config:
+                severity: error
+          - relationships:
+              arguments:
+                to: ref('stg_members')
+                field: member_id
+              config:
+                severity: error
+      - name: provider_id
+        data_tests:
+          - not_null:
+              config:
+                severity: error
+          - relationships:
+              arguments:
+                to: ref('stg_providers')
+                field: provider_id
+              config:
+                severity: error
+      - name: currency
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['KES']
+              config:
+                severity: warn
   - name: stg_claim_lines
     description: "Cleaned claim lines, one row per claim_line_id"
     columns:
       - name: claim_line_id
         data_tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+      - name: claim_id
+        data_tests:
+          - not_null:
+              config:
+                severity: error
+          - relationships:
+              arguments:
+                to: ref('stg_claims')
+                field: claim_id
+              config:
+                severity: error
   - name: stg_claim_status_events
     description: "Cleaned append-only status events"
     columns:
       - name: event_id
         data_tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+      - name: claim_id
+        data_tests:
+          - not_null:
+              config:
+                severity: error
+          - relationships:
+              arguments:
+                to: ref('stg_claims')
+                field: claim_id
+              config:
+                severity: error
+      - name: status
+        data_tests:
+          - not_null:
+              config:
+                severity: error
+          - accepted_values:
+              arguments:
+                values: ['received', 'in_review', 'approved', 'rejected', 'paid']
+              config:
+                severity: error
   - name: stg_members
     description: "Cleaned members, one row per member_id"
     columns:
       - name: member_id
         data_tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+      - name: scheme_id
+        data_tests:
+          - not_null:
+              config:
+                severity: error
+          - relationships:
+              arguments:
+                to: ref('stg_schemes')
+                field: scheme_id
+              config:
+                severity: error
+      - name: member_status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['active', 'suspended', 'terminated']
+              config:
+                severity: warn
   - name: stg_providers
     description: "Cleaned providers, one row per provider_id"
     columns:
       - name: provider_id
         data_tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+      - name: provider_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['hospital', 'clinic', 'pharmacy', 'lab']
+              config:
+                severity: warn
   - name: stg_schemes
     description: "Cleaned schemes, one row per scheme_id"
     columns:
       - name: scheme_id
         data_tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+      - name: plan_tier
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['bronze', 'silver', 'gold']
+              config:
+                severity: warn

@@ -5,7 +5,7 @@ select
     cast(last_name as varchar) as last_name,
     cast(date_of_birth as date) as date_of_birth,
     cast(gender as varchar) as gender,
-    cast(county as varchar) as county,
+    upper(trim(cast(county as varchar))) as county,
     cast(enrolled_on as date) as enrolled_on,
     cast(status as varchar) as member_status
 from {{ source('claims_raw', 'raw_members') }}

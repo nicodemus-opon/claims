@@ -1,0 +1,116 @@
+version: 2
+models:
+  - name: dim_scheme
+    description: "One row per insurance scheme"
+    columns:
+      - name: scheme_id
+        data_tests:
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+  - name: dim_member
+    description: "One row per member (Type 1, latest scheme)"
+    columns:
+      - name: member_id
+        data_tests:
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+      - name: scheme_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_scheme')
+                field: scheme_id
+              config:
+                severity: error
+  - name: dim_provider
+    description: "One row per provider facility"
+    columns:
+      - name: provider_id
+        data_tests:
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+  - name: dim_date
+    description: "One row per calendar day, 2026"
+    columns:
+      - name: date_key
+        data_tests:
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+  - name: fct_claims
+    description: "One row per claim submission (no dedup)."
+    columns:
+      - name: claim_id
+        data_tests:
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+      - name: member_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_member')
+                field: member_id
+              config:
+                severity: error
+      - name: provider_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_provider')
+                field: provider_id
+              config:
+                severity: error
+      - name: scheme_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_scheme')
+                field: scheme_id
+              config:
+                severity: error
+      - name: service_date
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_date')
+                field: date_key
+              config:
+                severity: error
+  - name: fct_claim_lines
+    description: "One row per claim line"
+    columns:
+      - name: claim_line_id
+        data_tests:
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+      - name: claim_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('fct_claims')
+                field: claim_id
+              config:
+                severity: error

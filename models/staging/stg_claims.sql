@@ -13,5 +13,5 @@ select
     'AWAITING'
     when approved_amount >0 then
     'APPROVED'
-    end as approval_satus
+    end as approval_status
 from {{ source('claims_raw', 'raw_claims') }}

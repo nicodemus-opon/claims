@@ -1,33 +1,85 @@
 version: 2
 
 models:
+  - name: int_claim_adjudication
+    description: "First adjudication timestamp and turnaround days per claim"
+    columns:
+      - name: claim_id
+        data_tests:
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+          - relationships:
+              arguments:
+                to: ref('stg_claims')
+                field: claim_id
+              config:
+                severity: error
+      - name: adjudicated_at
+        description: "First approved/rejected event timestamp (null if still open)"
+  - name: int_claim_line_totals
+    description: "Aggregated line totals per claim (avoids fan-out in fct_claims)"
+    columns:
+      - name: claim_id
+        data_tests:
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
+          - relationships:
+              arguments:
+                to: ref('stg_claims')
+                field: claim_id
+              config:
+                severity: error
   - name: int_claim_current_status
     description: "Current status of each claim derived from the append-only event log. One row per claim_id; latest event by changed_at, ties broken by higher event_id."
     columns:
       - name: claim_id
         description: "Claim identifier"
         data_tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                severity: error
+          - not_null:
+              config:
+                severity: error
           - relationships:
               arguments:
                 to: ref('stg_claims')
                 field: claim_id
+              config:
+                severity: error
       - name: current_status
         description: "Most recent claim status"
         data_tests:
-          - not_null
+          - not_null:
+              config:
+                severity: error
           - accepted_values:
               arguments:
                 values: ['received', 'in_review', 'approved', 'rejected', 'paid']
+              config:
+                severity: error
       - name: status_changed_at
         description: "changed_at of the winning event"
         data_tests:
-          - not_null
+          - not_null:
+              config:
+                severity: error
       - name: status_changed_by
         description: "changed_by of the winning event"
       - name: current_event_id
         description: "event_id of the winning event (higher id on ties)"
         data_tests:
-          - not_null
-          - unique
+          - not_null:
+              config:
+                severity: error
+          - unique:
+              config:
+                severity: error
