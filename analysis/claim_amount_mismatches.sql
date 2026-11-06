@@ -1,5 +1,5 @@
--- view of claims where claim_amount does not match with sum of lines.
--- Rows are NOT dropped from fct_claims; they are flagged via line_amount_mismatch.
+-- Claims where claim_amount disagrees with sum of lines.
+-- Rows kept in fct_claims; flagged via line_amount_mismatch.
 SELECT
     c.claim_id,
     c.claim_amount,
