@@ -1,7 +1,7 @@
-select
-    cast(provider_id as integer) as provider_id,
-    cast(provider_name as varchar) as provider_name,
-    cast(provider_type as varchar) as provider_type,
-    upper(trim(cast(county as varchar))) as county,
-    cast(kmpdc_level as integer) as kmpdc_level
-from {{ source('claims_raw', 'raw_providers') }}
+SELECT
+    cast(provider_id AS integer) AS provider_id,
+    cast(provider_name AS varchar) AS provider_name,
+    cast(provider_type AS varchar) AS provider_type,
+    cast(kmpdc_level AS integer) AS kmpdc_level,
+    upper(trim(cast(county AS varchar))) AS county
+FROM {{ source('claims_raw', 'raw_providers') }}

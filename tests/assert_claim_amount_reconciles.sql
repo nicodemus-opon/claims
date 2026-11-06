@@ -4,12 +4,12 @@
 -- they do not block the run.
 {{ config(severity='warn') }}
 
-select
+SELECT
     c.claim_id,
     c.claim_amount,
-    coalesce(l.lines_total_amount, 0) as lines_total_amount,
-    c.claim_amount - coalesce(l.lines_total_amount, 0) as diff
-from {{ ref('stg_claims') }} c
-left join {{ ref('int_claim_line_totals') }} l
-  on l.claim_id = c.claim_id
-where abs(c.claim_amount - coalesce(l.lines_total_amount, 0)) > 0.01
+    coalesce(l.lines_total_amount, 0) AS lines_total_amount,
+    c.claim_amount - coalesce(l.lines_total_amount, 0) AS diff
+FROM {{ ref('stg_claims') }} c
+LEFT JOIN {{ ref('int_claim_line_totals') }} l
+    ON c.claim_id = l.claim_id
+WHERE abs(c.claim_amount - coalesce(l.lines_total_amount, 0)) > 0.01

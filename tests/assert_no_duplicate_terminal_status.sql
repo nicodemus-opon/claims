@@ -4,18 +4,22 @@
 -- them as a warning keeps the run green while flagging the source issue.
 {{ config(severity='warn') }}
 
-with ordered as (
-    select
+WITH ordered AS (
+    SELECT
         claim_id,
         event_id,
         status,
-        lag(status) over (partition by claim_id order by changed_at, event_id) as prev_status
-    from {{ ref('stg_claim_status_events') }}
+        lag(status)
+            OVER (PARTITION BY claim_id ORDER BY changed_at, event_id)
+            AS prev_status
+    FROM {{ ref('stg_claim_status_events') }}
 )
-select
+
+SELECT
     claim_id,
     event_id,
     status
-from ordered
-where status in ('approved', 'rejected', 'paid')
-  and status = prev_status
+FROM ordered
+WHERE
+    status IN ('approved', 'rejected', 'paid')
+    AND status = prev_status

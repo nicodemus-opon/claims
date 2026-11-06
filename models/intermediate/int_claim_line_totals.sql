@@ -1,7 +1,7 @@
-select
+SELECT
     claim_id,
-    count(*) as line_count,
-    coalesce(sum(line_amount), 0) as lines_total_amount,
-    coalesce(sum(quantity * unit_price), 0) as lines_computed_amount
-from {{ ref('stg_claim_lines') }}
-group by claim_id
+    count(*) AS line_count,
+    coalesce(sum(line_amount), 0) AS lines_total_amount,
+    coalesce(sum(quantity * unit_price), 0) AS lines_computed_amount
+FROM {{ ref('stg_claim_lines') }}
+GROUP BY claim_id

@@ -1,11 +1,11 @@
-select
-    cast(member_id as integer) as member_id,
-    cast(scheme_id as integer) as scheme_id,
-    cast(first_name as varchar) as first_name,
-    cast(last_name as varchar) as last_name,
-    cast(date_of_birth as date) as date_of_birth,
-    cast(gender as varchar) as gender,
-    upper(trim(cast(county as varchar))) as county,
-    cast(enrolled_on as date) as enrolled_on,
-    cast(status as varchar) as member_status
-from {{ source('claims_raw', 'raw_members') }}
+SELECT
+    cast(member_id AS integer) AS member_id,
+    cast(scheme_id AS integer) AS scheme_id,
+    cast(first_name AS varchar) AS first_name,
+    cast(last_name AS varchar) AS last_name,
+    cast(date_of_birth AS date) AS date_of_birth,
+    cast(gender AS varchar) AS gender,
+    cast(enrolled_on AS date) AS enrolled_on,
+    cast(status AS varchar) AS member_status,
+    upper(trim(cast(county AS varchar))) AS county
+FROM {{ source('claims_raw', 'raw_members') }}

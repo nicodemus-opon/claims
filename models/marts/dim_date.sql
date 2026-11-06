@@ -1,13 +1,16 @@
-with spine as (
-    select cast(d as date) as date_key
-    from generate_series(date '2026-01-01', date '2026-12-31', interval '1 day') as t(d)
+WITH spine AS (
+    SELECT cast(d AS date) AS date_key
+    FROM
+        generate_series(
+            date '2026-01-01', date '2026-12-31', interval '1 day'
+        ) AS t (d)
 )
 
-select
+SELECT
     date_key,
-    extract('year' from date_key)::integer as year,
-    extract('quarter' from date_key)::integer as quarter,
-    extract('month' from date_key)::integer as month_num,
-    date_trunc('month', date_key)::date as month_start_date,
-    strftime(date_key, '%B') as month_name
-from spine
+    cast(extract('year' FROM date_key) AS integer) AS year,
+    cast(extract('quarter' FROM date_key) AS integer) AS quarter,
+    cast(extract('month' FROM date_key) AS integer) AS month_num,
+    cast(date_trunc('month', date_key) AS date) AS month_start_date,
+    strftime(date_key, '%B') AS month_name
+FROM spine

@@ -1,0 +1,28 @@
+[sqlfluff]
+dialect = duckdb
+templater = dbt
+processes = 4
+exclude_rules = RF01,RF02,RF03,RF04,RF05,RF06,CV10,AL01
+
+[sqlfluff:templater:dbt]
+project_dir = .
+profiles_dir = .
+profile = claims
+
+[sqlfluff:layout:type:comma]
+line_position = trailing
+
+[sqlfluff:rules:capitalisation.keywords]
+capitalisation_policy = upper
+
+[sqlfluff:rules:capitalisation.identifiers]
+extended_capitalisation_policy = lower
+
+[sqlfluff:rules:capitalisation.functions]
+extended_capitalisation_policy = lower
+
+[sqlfluff:rules:capitalisation.literals]
+capitalisation_policy = upper
+
+[sqlfluff:indentation]
+indent_size = 4
