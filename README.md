@@ -47,7 +47,7 @@ Intermediate models: `int_claim_current_status` (latest event per claim), `int_c
 - `line_amount_mismatch` flags claims where `claim_amount` differs from summed `line_amount` by more than `0.01`.
 - `int_claim_line_totals.lines_total_amount` sums stored `line_amount`; `lines_computed_amount` (`quantity * unit_price`) is also available.
 - LEFT JOINs keep claims with missing member/provider/scheme references.
-- County and status values are trimmed/uppercased or accepted-value tested; currency is assumed to be KES.
+- County and status values are trimmed/uppercased or accepted-value tested.
 - DuckDB single-file warehouse, staging/intermediate as views, and full refresh keep the project easy to clone and run. No incremental or partitioned loads.
 
 ## With a week
@@ -61,15 +61,14 @@ Intermediate models: `int_claim_current_status` (latest event per claim), `int_c
 
 ## At 1,000x volume
 
-- Move raw storage and compute to a warehouse (BigQuery/Snowflake) or object storage plus compute.
+- Move raw storage and compute to a warehouse or object storage plus compute.
 - Incremental merge/upsert loads, clustered/partitioned by `service_date` and `claim_id`.
-- Orchestrator with retries, freshness checks, and SLAs.
+- Orchestrator with retries, freshness checks.
 - Idempotent, deduplicated status-event ingestion and event sourcing for current status.
 - Separate storage/compute and observability for data quality failures.
 
 ## Not finished
 
-- Only two custom singular tests; most coverage is generated dbt tests.
 - `dim_date` is hardcoded to 2026.
 - Dimensions are Type 1 only.
 - `analysis/` SQL is not materialized as models or exposures.
